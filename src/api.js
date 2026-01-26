@@ -27,4 +27,4 @@ function processWeatherData(data) {
   };
 }
 
-export { fetchWeather, processWeatherData };
+export { fetchWeatherData, processWeatherData };
