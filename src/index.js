@@ -16,3 +16,7 @@ form.addEventListener("submit", async (e) => {
   console.log(weather);
     renderWeather(weather);
 });
+
+toggleBtn.addEventListener("click", () => {
+  unit = unit === "metric" ? "us" : "metric";
+});
