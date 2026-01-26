@@ -1,4 +1,4 @@
-import { fetchWeather, processWeatherData } from "./api";
+import { fetchWeatherData, processWeatherData } from "./api";
 import { renderWeather } from "./dom";
 
 const form = document.getElementById("weather-form");
