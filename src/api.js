@@ -17,4 +17,14 @@ const fetchWeatherData = async () => {
 
 // Call the function to fetch weather data
 fetchWeatherData();
-export { fetchWeather };
+
+function processWeatherData(data) {
+  return {
+    address: data.resolvedAddress,
+    description: data.currentConditions.conditions,
+    temperature: data.currentConditions.temp,
+    icon: data.currentConditions.icon,
+  };
+}
+
+export { fetchWeather, processWeatherData };
