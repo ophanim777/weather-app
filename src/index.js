@@ -6,3 +6,13 @@ const input = document.getElementById("location-input");
 const toggleBtn = document.getElementById("toggle-unit");
 
 let unit = "metric";
+
+
+form.addEventListener("submit", async (e) => {
+  e.preventDefault();
+
+  const data = await fetchWeather(input.value, unit);
+  const weather = processWeatherData(data);
+  console.log(weather);
+    renderWeather(weather);
+});
