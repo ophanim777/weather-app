@@ -1,0 +1,16 @@
+body {
+  font-family: sans-serif;
+  transition: background-color 0.3s;
+}
+
+.clear {
+  background-color: #87ceeb;
+}
+
+.rain {
+  background-color: #5f9ea0;
+}
+
+.cloudy {
+  background-color: #b0c4de;
+}
