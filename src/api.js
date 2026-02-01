@@ -8,7 +8,8 @@ const fetchWeatherData = async (location) => {
             throw new Error('Network response was not ok ' + response.statusText);
         }
         const weatherData = await response.json();
-        console.log('Weather data for Medan:', weatherData);
+        console.log('Weather data for', location, weatherData);
+        return weatherData;
     } catch (error) {
         console.error('Error fetching weather data:', error);
     }
