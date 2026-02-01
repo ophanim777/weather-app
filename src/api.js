@@ -1,4 +1,4 @@
-const fetchWeatherData = async (location) => {
+const fetchWeatherData = async (location, unit = "metric") => {
     const apiKey = 'F6ZWV6YHGNEMWY2KRHHPR336W';
     const url = `https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/${encodeURIComponent(location)}?unitGroup=metric&contentType=json&key=${apiKey}`;
 
