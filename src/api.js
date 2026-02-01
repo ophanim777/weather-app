@@ -8,8 +8,8 @@ const fetchWeatherData = async (location, unit = "metric") => {
             throw new Error('Network response was not ok ' + response.statusText);
         }
         const weatherData = await response.json();
-        console.log('Weather data for', location, weatherData);
         return weatherData;
+        console.log('Weather data for', location, weatherData);
     } catch (error) {
         console.error('Error fetching weather data:', error);
     }
