@@ -17,6 +17,12 @@ form.addEventListener("submit", async (e) => {
     renderWeather(weather);
 });
 
-toggleBtn.addEventListener("click", () => {
+toggleBtn.addEventListener("click", async () => {
   unit = unit === "metric" ? "us" : "metric";
+  if (input.value) {
+    const data = await fetchWeatherData(input.value, unit);
+    const weather = processWeatherData(data);
+    renderWeather(weather);
+  }
 });
+
