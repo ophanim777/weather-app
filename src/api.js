@@ -15,9 +15,6 @@ const fetchWeatherData = async (location) => {
     }
 };
 
-// Call the function to fetch weather data
-fetchWeatherData();
-
 function processWeatherData(data) {
   return {
     address: data.resolvedAddress,
