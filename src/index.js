@@ -11,7 +11,7 @@ let unit = "metric";
 form.addEventListener("submit", async (e) => {
   e.preventDefault();
 
-  const data = await fetchWeather(input.value, unit);
+  const data = await fetchWeatherData(input.value, unit);
   const weather = processWeatherData(data);
   console.log(weather);
     renderWeather(weather);
